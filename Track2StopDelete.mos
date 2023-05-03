@@ -1,8 +1,8 @@
 !autoload
-!name Track 1 Mute/Reset
+!name Track 2 Mute/Reset
 !multiclick 500
 
-Track 1
+Track 2
 
 Mute
 
