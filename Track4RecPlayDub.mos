@@ -1,0 +1,25 @@
+!autoload
+!name Track 4 Rec/Play
+!quantize
+
+
+Track 4
+#set switchQuant loop
+#set QuantizeMode on
+
+if 	mode == reset
+			Record
+			end
+	
+else 	if mode == pause
+			Play
+			end
+	
+else 	if mode == play
+			Overdub
+			end
+	
+else 	if mode != reset
+			Play
+			end		
+endif

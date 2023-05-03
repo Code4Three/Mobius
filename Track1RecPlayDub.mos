@@ -1,0 +1,32 @@
+!autoload
+!name Track 1 Rec/Play
+
+message Layer count is $layerCount
+
+Track 1
+message Loop count is $layerCount
+
+if 	mode == reset
+			Record
+			end
+	
+else 	if mode == overdub
+			wait loop
+			Play
+			end
+
+else 	if mode == pause
+			Play
+			end
+	
+else 	if mode == play
+			wait loop
+			Overdub
+			wait loop
+			Overdub off
+			end
+	
+else 	if mode != reset
+			Play
+			end		
+endif
