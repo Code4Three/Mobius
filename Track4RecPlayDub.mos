@@ -1,25 +1,32 @@
 !autoload
 !name Track 4 Rec/Play
-!quantize
 
 
 Track 4
-#set switchQuant loop
-#set QuantizeMode on
+!multiclick 500
 
-if 	mode == reset
-			Record
-			end
-	
-else 	if mode == pause
-			Play
-			end
-	
-else 	if mode == play
-			Overdub
-			end
-	
-else 	if mode != reset
-			Play
-			end		
+if mode == reset
+Record
+end
+
+else if mode == mute
+Reset
+Record
+end
+
+else if mode == record
+Play
+end
+
+else if mode == play
+Overdub
+end
+
+else if mode != reset
+Overdub
+end
 endif
+
+label click
+Overdub
+end
