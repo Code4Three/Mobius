@@ -1,5 +1,11 @@
 !autoload
-!name Track 4 stop/delete
+!name Track 4 Mute/Reset
+!multiclick 500
 
 Track 4
-Pause
+
+Mute
+
+label click
+Reset
+end
