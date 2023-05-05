@@ -1,13 +1,11 @@
+!name All stop/reset
 !autoload
+!multiclick 500
 
-Track 1
-    Pause
 
-Track 2
-    Pause
+GlobalPause
+end
 
-Track 3
-    Pause
-
-Track 4
-    Pause
+label click
+    GlobalReset
+    end

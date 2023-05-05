@@ -1,0 +1,10 @@
+!autoload
+!name Undo/Redo
+
+
+Undo
+end
+
+label click
+    Redo
+end

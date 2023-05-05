@@ -5,7 +5,9 @@
 Track 3
 
 Mute
+end
 
 label click
-Reset
+    Message Resetting
+    Reset
 end

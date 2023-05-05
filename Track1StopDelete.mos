@@ -4,8 +4,11 @@
 
 Track 1
 
+
 Mute
+end
 
 label click
-Reset
+    Message Resetting
+    Reset
 end
